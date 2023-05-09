@@ -1,0 +1,27 @@
+package com.krishna.dao;
+
+import org.hibernate.SessionFactory;
+
+import com.krishna.model.AdminLog;
+
+public class AdminDaoImpl implements AdminDao {
+
+	private SessionFactory factory;
+	
+	public AdminDaoImpl() {
+		factory=AdminUtilImpl()
+	}
+	
+	@Override
+	public int addAdmin(AdminLog admin) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void modifyAdmin(int id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

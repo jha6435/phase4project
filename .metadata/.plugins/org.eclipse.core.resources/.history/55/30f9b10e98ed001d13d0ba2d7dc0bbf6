@@ -1,0 +1,11 @@
+package com.krishna.dao;
+
+import com.krishna.model.AdminLog;
+
+public interface AdminDao {
+	
+	public AdminLog addAdmin(AdminLog admin);
+	public void modifyAdmin(int id);
+	
+
+}

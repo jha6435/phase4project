@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .menuList{
+   font-weight: bold;
+            font-size: 26pt;
+            background: powderblue;
+    }
+    </style>
+</head>
+<body>
+    <h2>MENU LIST OF KITCHEN STORY</h3>
+    <ul>
+    <li class="menuList">BURGER</li>
+    <li class="menuList">MOMOS</li>
+    <li class="menuList">CHAUMIN</li>
+    <li class="menuList">ICE CREAM</li>
+    <li class="menuList">HALWA</li>
+    <li class="menuList">PIZZA</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,10 @@
+package com.krishna.service;
+
+import com.krishna.model.AdminLog;
+
+public interface AdminService {
+	
+	public AdminLog addAdmin(AdminLog admin);
+	public void modifyAdmin(int id);
+
+}

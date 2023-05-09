@@ -1,0 +1,42 @@
+package com.krishna.controller;
+
+import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+public class ChauminPurchaseController extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	
+Integer quantity=Integer.parseInt(request.getParameter("num"));
+		
+		if(quantity>=1) {
+		int chauminPrice=40*quantity;
+		
+		System.out.println("you have selected "+quantity+" chaumin to purchase");
+		System.out.println("you hava to pay Amount: "+chauminPrice);
+		
+		RequestDispatcher dispatcher=request.getRequestDispatcher("chauminPay.jsp");
+		dispatcher.forward(request, response);}
+	
+		else {
+			System.out.println("please check the input and try again");
+		}
+		
+		
+	}
+
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		doGet(request, response);
+	}
+
+}

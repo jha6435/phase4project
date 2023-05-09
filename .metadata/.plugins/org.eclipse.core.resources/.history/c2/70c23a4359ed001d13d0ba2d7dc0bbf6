@@ -1,0 +1,52 @@
+package com.krishna.dao;
+
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+import com.krishna.model.FlightData;
+import com.krisna.util.TicketUtilImpl;
+
+import jakarta.persistence.Id;
+import jakarta.persistence.TypedQuery;
+
+public class TicketDaoImpl implements TicketDao{
+
+	SessionFactory fact=new TicketUtilImpl().getFactory();
+	
+	
+	
+	@Override
+	public List<FlightData> searchResult(FlightData fd) {
+		Session session=fact.openSession();
+		Transaction transaction=session.beginTransaction();
+		String query="{from FlightData f where f.source=}"+ fd.getSource() +
+		"{and f.destination=}"+ fd.getDestination();
+		
+		TypedQuery<FlightData>tq=session.createQuery(query);
+		List<FlightData> result=tq.getResultList();
+		transaction.commit();
+		session.close();
+		return result;
+	}
+
+	@Override
+	public FlightData searchBySource(String source) {
+		Session session=fact.openSession();
+		Transaction transaction=session.beginTransaction();
+		String query="from FlightData f where f.source= 'new delhi'";
+		
+		
+		TypedQuery<FlightData>tq=session.createQuery(query);
+		List<FlightData> result=tq.getResultList();
+		transaction.commit();
+		session.close();
+		return null;
+	}
+
+	
+	
+	
+}

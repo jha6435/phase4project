@@ -1,0 +1,5 @@
+package com.krishna.model;
+
+public class AdminLog {
+
+}

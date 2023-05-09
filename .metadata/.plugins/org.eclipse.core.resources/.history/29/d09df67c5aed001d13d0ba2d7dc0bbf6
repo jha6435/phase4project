@@ -1,0 +1,5 @@
+package com.krishna.service;
+
+public class AdminServiceImpl {
+
+}

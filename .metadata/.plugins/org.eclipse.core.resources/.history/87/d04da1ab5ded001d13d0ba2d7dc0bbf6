@@ -1,0 +1,27 @@
+package com.krishna.service;
+
+import com.krishna.dao.AdminDao;
+import com.krishna.dao.AdminDaoImpl;
+import com.krishna.model.AdminLog;
+
+public class AdminServiceImpl implements AdminService {
+
+	private AdminDao dao;
+	
+	public AdminServiceImpl() {
+		dao=new AdminDaoImpl();
+	}
+	
+	@Override
+	public int addAdmin(AdminLog admin) {
+		
+		return dao.addAdmin(admin);
+	}
+
+	@Override
+	public void modifyAdmin(int id) {
+	dao.modifyAdmin(id);
+		
+	}
+
+}

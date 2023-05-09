@@ -1,0 +1,14 @@
+0:0:0:0:0:0:0:1 - - [09/May/2023:16:25:52 +0530] "GET /Kitchenstory/index.jsp HTTP/1.1" 200 2135
+0:0:0:0:0:0:0:1 - - [09/May/2023:16:25:53 +0530] "GET /Kitchenstory/momos.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [09/May/2023:16:25:53 +0530] "GET /Kitchenstory/halwa.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [09/May/2023:16:25:53 +0530] "GET /Kitchenstory/burger.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [09/May/2023:16:25:53 +0530] "GET /Kitchenstory/style1.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [09/May/2023:16:25:53 +0530] "GET /Kitchenstory/icecream.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [09/May/2023:16:25:53 +0530] "GET /Kitchenstory/pizza.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [09/May/2023:16:25:53 +0530] "GET /Kitchenstory/chaumin.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [09/May/2023:16:25:55 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [09/May/2023:16:26:00 +0530] "GET /Kitchenstory/burger.html HTTP/1.1" 200 507
+0:0:0:0:0:0:0:1 - - [09/May/2023:16:26:11 +0530] "POST /Kitchenstory/PurchaseController HTTP/1.1" 200 489
+0:0:0:0:0:0:0:1 - - [09/May/2023:16:28:26 +0530] "POST /Kitchenstory/BergerPayController HTTP/1.1" 200 190
+0:0:0:0:0:0:0:1 - - [09/May/2023:16:47:59 +0530] "GET /Kitchenstory/menu.html HTTP/1.1" 200 759
+0:0:0:0:0:0:0:1 - - [09/May/2023:16:51:29 +0530] "GET /Kitchenstory/admin.html HTTP/1.1" 304 -

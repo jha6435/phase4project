@@ -1,0 +1,35 @@
+package com.krishna.controller;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.krishna.model.AdminLog;
+import com.krishna.service.AdminServiceImpl;
+
+
+public class AdminController extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		String usrName=request.getParameter("uname");
+		String password=request.getParameter("pword");
+		System.out.println(usrName);
+		System.out.println(password);
+	
+	AdminLog admin1=new AdminLog("rupesh", "rupesh121");
+	int id=new AdminServiceImpl().addAdmin(admin1);
+	System.out.println(id);
+	
+	}
+
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	
+		doGet(request, response);
+	}
+
+}

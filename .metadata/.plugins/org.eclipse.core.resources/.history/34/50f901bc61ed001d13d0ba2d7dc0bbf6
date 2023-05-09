@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    form{
+    background:yellow;
+    font-size:20pt;
+    }
+    </style>
+</head>
+<body>
+  <form action="AdminController" method="post">
+  username:<input type="text" name="uname"><br>
+  password:<input type="text" name="pword"><br>
+  <br>
+  <br>
+  <input type="submit" value="login"><br>
+  <br>
+  <br>
+  <br>
+  <a href="">changePassword</a>
+  </form>
+</body>
+</html>

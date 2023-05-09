@@ -1,0 +1,41 @@
+.container-fluid1{
+    height: 20%;text-align: center;
+    color: blue;
+    background-color: aqua;
+}
+.container-fluid2{
+    height: 80%;
+}
+.row{
+    color: greenyellow;
+    height: 300px;
+  padding: 15px;
+ 
+}
+.col-md-4{
+    border: solid black 1px;
+
+}
+#chauminimg{
+    width: 400px;
+}
+#momosimg{
+    width: 370px;
+}
+#burgerimg{
+    width: 400px;
+}
+#iceimg{
+    padding-top: 10px;
+    width: 400px;
+}
+#halwaimg{
+    padding-top: 10px;
+    width: 400px;
+   
+}
+#pizzaimg{
+    padding-top: 10px;
+    width: 400px; 
+    height: 400px; 
+}
